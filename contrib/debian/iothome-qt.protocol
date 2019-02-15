@@ -1,0 +1,11 @@
+[Protocol]
+exec=iothome-qt '%u'
+protocol=iothome
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

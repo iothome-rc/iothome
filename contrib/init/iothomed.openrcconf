@@ -1,0 +1,26 @@
+# /etc/conf.d/iothomed: config file for /etc/init.d/iothomed
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/iothome/iothome.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/iothomed"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/iothomed.pid"
+
+# Where to write iothomed data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/iothomed"
+
+# User and group to own iothomed process
+#BITCOIND_USER="iothome"
+#BITCOIND_GROUP="iothome"
+
+# Path to iothomed executable
+#BITCOIND_BIN="/usr/bin/iothomed"
+
+# Nice value to run iothomed under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

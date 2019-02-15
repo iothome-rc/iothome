@@ -1,0 +1,26 @@
+[Unit]
+Description=IoTHome's distributed currency daemon
+After=network.target
+
+[Service]
+User=iothome
+Group=iothome
+
+Type=forking
+PIDFile=/var/lib/iothomed/iothomed.pid
+
+ExecStart=/usr/bin/iothomed -daemon -pid=/var/lib/iothomed/iothomed.pid \
+          -conf=/etc/iothome/iothome.conf -datadir=/var/lib/iothomed
+
+ExecStop=-/usr/bin/iothome-cli -conf=/etc/iothome/iothome.conf \
+         -datadir=/var/lib/iothomed stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

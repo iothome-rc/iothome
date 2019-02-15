@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IoTHome
+Comment=IoTHome P2P Cryptocurrency
+Comment[fr]=IoTHome, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=IoTHome, eşten eşe kriptografik sanal para birimi
+Exec=iothome-qt %u
+Terminal=false
+Type=Application
+Icon=iothome128
+MimeType=x-scheme-handler/iothome;
+Categories=Office;Finance;
